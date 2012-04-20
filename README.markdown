@@ -20,8 +20,10 @@ Features
 Use
 ---
 
-Typical jQuery style implementation&mdash;target the links with a selector and fire off the method:
+Typical jQuery style implementation&mdash;include jQuery and the bladeModal javascript files then target the links with a selector and fire off the method:
 
+	<script type="text/javascript" src="path/to/jQuery.js"></script>
+	<script type="text/javascript" src="path/to/jQuery.bladeModal.js"></script>
 	<script type="text/javascript">
 
 		jQuery(function(){
