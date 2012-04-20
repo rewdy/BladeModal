@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>BladeModal</title>
+  
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="stylesheets/foundation.css">
+	<link rel="stylesheet" href="stylesheets/app.css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="stylesheets/ie.css">
+	<![endif]-->
+	
+	<link rel="stylesheet" href="jquery.bladeModal.css">
+	<style type="text/css">
+		#outputPanel {background-color:rgba(0,0,0,0.8); color:#fff; position:fixed; width:200px; padding:15px; top:20px; right:20px; }
+	</style>
+
+	<script src="javascripts/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<!-- container -->
+	<div class="container">
+
+		<div id="header" class="row">
+			<div class="twelve columns text-center">
+				<h1>BladeModal</h1>
+				<p>Slice your content into your content.</p>
+				<hr />
+			</div>
+		</div>
+
+		<div id="body_content" class="row">
+			
+			<div class="eight columns">
+				<div class="panel">
+					<p class="lead">BladeModal is a jQuery Modal plugin. BladeModal differs from other modals in that it inserts the modal inline with your other content. BladeModal supports AJAX content, images, and iframes.</p>
+				</div>
+				<h3>How it Works (Features)</h3>
+				<p>The bladeModal appends the content below the current block elements. So, that means you don't have to worry about it jankin' up your normal content. After the content has been appended, it scrolls it into view so that if the content is appended below the viewport, a user will be able to see it still.</p>
+				<h3>Examples</h3>
+				<h4>#1: A large image that is automatically scalled to fix the column</h4>
+				<ul class="inline clearfix">
+					<li><a href="images/photos/BladeModal-Test-Img-001.jpg" class="blade"><img src="images/photos/BladeModal-Test-Img-001_thb.jpg" alt="BladeModal Test Image 1" /></a></li>
+					<li><a href="images/photos/BladeModal-Test-Img-002.jpg" class="blade"><img src="images/photos/BladeModal-Test-Img-002_thb.jpg" alt="BladeModal Test Image 2" /></a></li>
+					<li><a href="images/photos/BladeModal-Test-Img-003.jpg" class="blade"><img src="images/photos/BladeModal-Test-Img-003_thb.jpg" alt="BladeModal Test Image 3" /></a></li>
+					<li><a href="images/photos/BladeModal-Test-Img-004.jpg" class="blade"><img src="images/photos/BladeModal-Test-Img-004_thb.jpg" alt="BladeModal Test Image 4" /></a></li>
+					<li><a href="images/photos/BladeModal-Test-Img-005.jpg" class="blade"><img src="images/photos/BladeModal-Test-Img-005_thb.jpg" alt="BladeModal Test Image 5" /></a></li>
+					<li><a href="images/photos/BladeModal-Test-Img-006.jpg" class="blade"><img src="images/photos/BladeModal-Test-Img-006_thb.jpg" alt="BladeModal Test Image 6" /></a></li>
+				</ul>
+				<h4>#2: AJAX-loaded Content</h4>
+				<p><a href="test-content-1.html" class="blade">Example Link #1</a></p>
+				<p><a href="test-content-2.html" class="blade">Example Link #2</a></p>
+				<p><a href="test-content-3.html" class="blade">Example Link #3</a></p>
+				<h4>#3: Iframe Content</h4>
+				<p></p>
+			</div>
+			<div class="four columns">
+				<h3>Git it ;)</h3>
+				<p>BladeModal can be downloaded from Github. Also, feel free to fork and improve.</p>
+				<p><a href="http://github.com/rewdy/BladeModal" class="nice radius large blue button">Get It From Github!</a></p>
+			</div>
+		</div>
+		<!-- close #body_content -->
+
+		<div id="footer" class="row">
+			<hr />
+
+			<p>&copy; 2012 <a href="http://rewdy.com">Rewdy</a></p>
+		</div>
+
+	</div>
+	<!-- close .container -->
+
+
+
+
+	<!-- Included JS Files -->
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/foundation.js"></script>
+	<script src="javascripts/app.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.8.10.custom.min.js"></script>
+	<script type="text/javascript" src="jquery.bladeModal.js"></script>
+
+	<script type="text/javascript">
+	$(function(){
+		$('a.blade').bladeModal();
+	});
+	</script>
+</body>
+</html>
