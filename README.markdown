@@ -36,4 +36,7 @@ That's all there is to it. You can pass an optional array of options to the @bla
 
 ---
 
-More coming soon...
+Roadmap
+---
+
+1. Add the ability to show "galleries" of images and navigate through them with arrow keys, links.
